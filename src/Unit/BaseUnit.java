@@ -7,15 +7,15 @@ package Unit;
    так чтобы он возвращал название класса или имя. Создать в основной программе по одному обьекту каждого не
    абстрактного класса и вывести в консоль его имя.*/
 public abstract class BaseUnit {
-    String name; //имя
-    String typeDamage; // тип атаки
-    int hp; // здоровье
-    int maxhp; // максимальное здоровье
-    int armor; // броня
-    int speedMove; //скорость передвижения
-    int damage; // урон
-    int speedDamage; // скорость атаки
-    int rangeDamage; // дальность атаки
+    protected String name; //имя
+    protected String typeDamage; // тип атаки
+    protected  int hp; // здоровье
+    protected  int maxhp; // максимальное здоровье
+    protected int armor; // броня
+    protected int speedMove; //скорость передвижения
+    protected int damage; // урон
+    protected int speedDamage; // скорость атаки
+    protected int rangeDamage; // дальность атаки
 
     public BaseUnit(String name, String typeDamage, int hp, int maxhp, int armor, int speedMove, int damage, int speedDamage, int rangeDamage) {
         this.name = name;
